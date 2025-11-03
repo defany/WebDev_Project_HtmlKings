@@ -1,0 +1,54 @@
+/* Form header styling */
+#form_header {
+    font-family: cursive;
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+/* Main form container layout */
+#form_overall_container_layout {
+    display: block;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+/* Individual form row layout with flex alignment */
+.form_div_layout {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+/* Form label text styling with fixed width for alignment */
+.form_text_style {
+    font-family: cursive;
+    font-size: 18px;
+    min-width: 30%;
+}
+
+/* Form input field styling with consistent sizing */
+.form_input_style {
+    flex: 1;
+    max-width: 400px;
+    min-width: 200px;
+
+    padding: 10px;
+    font-family: cursive;
+    font-size: 16px;
+
+    /* Include padding in height calculation,
+    Note: Was the only way to get the drop down box to match same size as the other input fields */
+    box-sizing: border-box;
+
+}
+
+/* Form button styling for submit and reset actions */
+.form_button_style {
+    font-family: cursive;
+    font-size: 18px;
+    margin-top: 0.5em;
+    padding-left: 0px;
+    min-width: 150px;
+    min-height: 40px;
+}

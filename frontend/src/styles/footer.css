@@ -1,0 +1,64 @@
+/* Footer container that sticks to bottom of page */
+.footer {
+    position: relative;
+    /* Pushes footer to bottom in flex layouts */
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+/* Main footer text area container */
+.footer_main_text_container {
+    position: relative;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Individual text lines in footer */
+.footer_main_text {
+    font-family: cursive;
+    text-align: center;
+    line-height: 2vh;
+}
+
+/* Container for date and social media logos */
+.footer_datelogos_container {
+    margin: auto;
+    height: 5vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Social media icons container aligned to right */
+.footer_logos_container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    gap: 2vw;
+}
+
+/* Last updated date text styling */
+.footer_date_text {
+    font-family: cursive;
+    height: 5vh;
+    width: 20vw;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/* Social media icon sizing */
+.footer_socialmedia_icon {
+    height: 5vh;
+    width: 5vh;
+    margin: auto;
+}
