@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../../static/one_piece.png') center/cover no-repeat;
+        url('../../static/general_ui_images/one_piece.png') center/cover no-repeat;
 }
 
 /* Text container within featured series banner */

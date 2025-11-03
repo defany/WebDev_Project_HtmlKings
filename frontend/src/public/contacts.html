@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/nav_bar.css">
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="../styles/contacts.css">
     <title>Anime Haven/Contacts</title>
 </head>
 
@@ -16,8 +19,9 @@
 
         <!--Homepage Button-->
         <div id="homepage_button">
-            <a href="index.html"><img src="../../static/Homepage_image.png"
-                    alt="Image of our homepage navigation bar button" id="homepage_button_img" /></a>
+            <a href="index.html">
+			<img src="../../static/general_ui_images/homepage_image.png" 
+			alt="Image of our homepage navigation bar button" id="homepage_button_img" /></a>
         </div>
 
         <!--Other Buttons-->
@@ -42,7 +46,7 @@
     <!--------------------------------------------------------------------------------------------->
     <!--Contact Information Section Begin-->
     <!--------------------------------------------------------------------------------------------->
-    <section style="padding: 20vh;">
+    <section>
         <h1>How to contact me</h1>
         <p>Hi everyone, I would love to hear from you, below you can find my socials.
             Feel free to ask me any questions you might have.</br>
@@ -50,44 +54,56 @@
         </p>
 
         <!--Contact methods unordered list with social media links and icons-->
-        <ul>
+        <ul class="contacts_socialmedia_info">
             <!--Email contact with Gmail icon-->
-            <li>My Email: SofiaMartinez@gmail.com
-                <img src="../../static/gmail_image.png" alt="Image of gmail icon" />
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">My Email: SofiaMartinez@gmail.com</div>
+                    <img class="contacts_socialmedia_icon" src="../../static/social_media_images/gmail_image.png" alt="Image of gmail icon" />
+                </div>
+            </li></br></br>
 
             <!--Phone number with WhatsApp icon-->
-            <li>My Phone Number: +353 85 123 4567
-                <img src="../../static/whatsapp_image.png" alt="Image of WhatsApp icon" />
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">My Phone Number: +353 85 123 4567</div>
+                    <img class="contacts_socialmedia_icon" src="../../static/social_media_images/whatsapp_image.png" alt="Image of WhatsApp icon" />
+                </div>
+            </li></br></br>
 
             <!--Facebook profile with link and icon-->
-            <li>Facebook: @SofiasAnimeHaven
-                <a href="https://www.facebook.com/">
-                    <img src="../../static/facebook_image.png" alt="Image of Facebook icon" />
-                </a>
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">Facebook: @SofiasAnimeHaven</div>
+                    <a href="https://www.facebook.com/">
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Image of Facebook icon" />
+                    </a>
+                </div>
+            </li></br></br>
 
             <!--Instagram profile with link and icon-->
-            <li>Instagram: SofiaAnimeClub
-                <a href="https://www.instagram.com/">
-                    <img src="../../static/instagram_image.png" alt="Image of Instagram icon" />
-                </a>
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">Instagram: SofiaAnimeClub</div>
+                    <a href="https://www.instagram.com/">
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Image of Instagram icon" />
+                    </a>
+                </div>
+            </li></br></br>
 
             <!--Twitter/X profile with link and icon-->
-            <li>X (Formaly known as Twitter): @AnimeHavenTweets
-                <a href="https://x.com/">
-                    <img src="../../static/x_image.png" alt="Image of X icon" />
-                </a>
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">X (Formaly known as Twitter): @AnimeHavenTweets</div>
+                    <a href="https://x.com/">
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="Image of X icon" />
+                    </a>
+                </div>
+            </li></br></br>
 
             <!--Discord username with link and icon-->
-            <li>Discord: AnimeHavenSofia#6969
-                <a href="https://discord.com/">
-                    <img src="../../static/discord_image.png" alt="Image of Discord icon" />
-                </a>
-            </li>
+            <li><div class="contacts_socialmedia_pair">
+                    <div class="contacts_socialmedia_text">Discord: AnimeHavenSofia#6969</div>
+                    <a href="https://discord.com/">
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Image of Discord icon" />
+                    </a>
+                </div>
+            </li></br></br>
         </ul>
     </section>
     <!--------------------------------------------------------------------------------------------->
@@ -163,52 +179,51 @@
     <!--------------------------------------------------------------------------------------------->
 
 
-    <!--------------------------------------------------------------------------------------------->
-    <!--Footer starts-->
-    <!--------------------------------------------------------------------------------------------->
-    <footer class="footer">
-        <br><br>
-        <hr>
+   <!--------------------------------------------------------------------------------------------->
+	<!--Footer starts-->
+	<!--------------------------------------------------------------------------------------------->
+	<footer class="footer">
+		<br /><br />
+		<hr />
 
-        <!--Main footer text section with copyright and legal links-->
-        <div class="footer_main_text_container">
-            <div class="footer_main_text">© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
-                <a href="contacts.html">Contact</a>
-            </div>
-            <div class="footer_main_text">All rights reserved. All trademarks and logos are property of their respective
-                owners.
-            </div>
-        </div>
-        <!--Footer bottom section with date and social media icons-->
-        <section class="footer_datelogos_container">
-            <!--Last updated date display-->
-            <div class="footer_date_text">Last Updated: 08/10/2025</div>
-            <!--Social media icons container-->
-            <div class="footer_logos_container">
+		<!--Main footer text section with copyright and legal links-->
+		<div class="footer_main_text_container">
+			<!--Last updated date display-->
+			<div class="footer_date_text">Last Updated: 03/11/2025</div>
+			<div>
+				<div class="footer_main_text">
+					© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
+					<a href="contacts.html">Contact</a>
+				</div>
+				<div class="footer_main_text">
+					All rights reserved. All trademarks and logos are property of their
+					respective owners.
+				</div>
+			</div>
+			<!--Social media icons container-->
+			<div class="footer_logos_container">
+				<a href="https://discord.com/">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Discord Logo" />
+				</a>
 
-                <a href="https://discord.com/">
-                    <img class="footer_socialmedia_icon" src="../../static/discord_image.png" alt="Discord Logo" />
-                </a>
+				<a href="https://www.facebook.com/">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Facebook logo" />
+				</a>
 
-                <a href="https://www.facebook.com/">
-                    <img class="footer_socialmedia_icon" src="../../static/facebook_image.png" alt="Facebook logo" />
-                </a>
+				<a href="https://www.instagram.com/">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Instagram logo" />
+				</a>
 
-                <a href="https://www.instagram.com/">
-                    <img class="footer_socialmedia_icon" src="../../static/instagram_image.png" alt="Instagram logo" />
-                </a>
-
-                <a href="https://x.com/">
-                    <img class="footer_socialmedia_icon" src="../../static/x_image.png" alt="X logo" />
-                </a>
-            </div>
-        </section>
-
-        <br>
-    </footer>
-    <!--------------------------------------------------------------------------------------------->
-    <!--Footer Ends-->
-    <!--------------------------------------------------------------------------------------------->
+				<a href="https://x.com/">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="X logo" />
+				</a>
+			</div>
+		</div>
+		<br />
+	</footer>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Footer Ends-->
+	<!--------------------------------------------------------------------------------------------->
 
 </body>
 

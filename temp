@@ -1,16 +1,9 @@
-
 /* Footer container that sticks to bottom of page */
 .footer {
     position: relative;
     /* Pushes footer to bottom in flex layouts */
     margin-top: auto;
     margin-bottom: 0;
-}
-
-/* Footer links so they will not be highlighted */
-.footer a {
-    text-decoration: none;
-    color: black;
 }
 
 /* Main footer text area container */
@@ -22,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* Individual text lines in footer */
