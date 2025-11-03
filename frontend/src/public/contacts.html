@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/index.css" rel="stylesheet" type="text/css" />
-    <link href="../styles/contacts.css" rel="stylesheet" type="text/css" />
-    <link href="../styles/nav_foot_bar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../styles/nav_bar.css">
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="../styles/contacts.css">
     <title>Anime Haven/Contacts</title>
 </head>
 
@@ -15,12 +15,13 @@
     <!--------------------------------------------------------------------------------------------->
     <!--Navigation Bar Begin-->
     <!--------------------------------------------------------------------------------------------->
-    <section class="nav_bar_layout">
+    <nav class="nav_bar_layout">
 
         <!--Homepage Button-->
         <div id="homepage_button">
-            <a href="index.html"><img src="../../static/Homepage_image.png"
-                    alt="Image of our homepage navigation bar button" id="homepage_button_img" /></a>
+            <a href="index.html">
+			<img src="../../static/general_ui_images/homepage_image.png" 
+			alt="Image of our homepage navigation bar button" id="homepage_button_img" /></a>
         </div>
 
         <!--Other Buttons-->
@@ -37,7 +38,7 @@
             Profile
         </div>
 
-    </section>
+    </nav>
     <!--------------------------------------------------------------------------------------------->
     <!--Navigation Bar End-->
     <!--------------------------------------------------------------------------------------------->
@@ -45,7 +46,7 @@
     <!--------------------------------------------------------------------------------------------->
     <!--Contact Information Section Begin-->
     <!--------------------------------------------------------------------------------------------->
-    <section style="padding: 20vh;">
+    <section id="contacts_ui_spacing">
         <h1>How to contact me</h1>
         <p>Hi everyone, I would love to hear from you, below you can find my socials.
             Feel free to ask me any questions you might have.</br>
@@ -57,14 +58,14 @@
             <!--Email contact with Gmail icon-->
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">My Email: SofiaMartinez@gmail.com</div>
-                    <img class="contacts_socialmedia_icon" src="../../static/gmail_image.png" alt="Image of gmail icon" />
+                    <img class="contacts_socialmedia_icon" src="../../static/social_media_images/gmail_image.png" alt="Image of gmail icon" />
                 </div>
             </li></br></br>
 
             <!--Phone number with WhatsApp icon-->
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">My Phone Number: +353 85 123 4567</div>
-                    <img class="contacts_socialmedia_icon" src="../../static/whatsapp_image.png" alt="Image of WhatsApp icon" />
+                    <img class="contacts_socialmedia_icon" src="../../static/social_media_images/whatsapp_image.png" alt="Image of WhatsApp icon" />
                 </div>
             </li></br></br>
 
@@ -72,7 +73,7 @@
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">Facebook: @SofiasAnimeHaven</div>
                     <a href="https://www.facebook.com/">
-                        <img class="contacts_socialmedia_icon" src="../../static/facebook_image.png" alt="Image of Facebook icon" />
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Image of Facebook icon" />
                     </a>
                 </div>
             </li></br></br>
@@ -81,7 +82,7 @@
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">Instagram: SofiaAnimeClub</div>
                     <a href="https://www.instagram.com/">
-                        <img class="contacts_socialmedia_icon" src="../../static/instagram_image.png" alt="Image of Instagram icon" />
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Image of Instagram icon" />
                     </a>
                 </div>
             </li></br></br>
@@ -90,7 +91,7 @@
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">X (Formaly known as Twitter): @AnimeHavenTweets</div>
                     <a href="https://x.com/">
-                        <img class="contacts_socialmedia_icon" src="../../static/x_image.png" alt="Image of X icon" />
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="Image of X icon" />
                     </a>
                 </div>
             </li></br></br>
@@ -99,7 +100,7 @@
             <li><div class="contacts_socialmedia_pair">
                     <div class="contacts_socialmedia_text">Discord: AnimeHavenSofia#6969</div>
                     <a href="https://discord.com/">
-                        <img class="contacts_socialmedia_icon" src="../../static/discord_image.png" alt="Image of Discord icon" />
+                        <img class="contacts_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Image of Discord icon" />
                     </a>
                 </div>
             </li></br></br>
@@ -140,7 +141,6 @@
             <label for="user_phone_number" class="form_text_style">Phone number:</label>
             <input type="tel" id="user_phone_number" name="user_phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 placeholder="333-222-5555" title="Please use format: 555-123-4567" class="form_input_style">
-
         </div>
 
         <!--DROP DOWN BOX-->
@@ -179,7 +179,7 @@
     <!--------------------------------------------------------------------------------------------->
 
 
-    <!--------------------------------------------------------------------------------------------->
+   <!--------------------------------------------------------------------------------------------->
 	<!--Footer starts-->
 	<!--------------------------------------------------------------------------------------------->
 	<footer class="footer">
@@ -189,7 +189,7 @@
 		<!--Main footer text section with copyright and legal links-->
 		<div class="footer_main_text_container">
 			<!--Last updated date display-->
-			<div class="footer_date_text">Last Updated: 08/10/2025</div>
+			<div class="footer_date_text">Last Updated: 03/11/2025</div>
 			<div>
 				<div class="footer_main_text">
 					© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
@@ -203,19 +203,19 @@
 			<!--Social media icons container-->
 			<div class="footer_logos_container">
 				<a href="https://discord.com/">
-					<img class="footer_socialmedia_icon" src="../../static/discord_image.png" alt="Discord Logo" />
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Discord Logo" />
 				</a>
 
 				<a href="https://www.facebook.com/">
-					<img class="footer_socialmedia_icon" src="../../static/facebook_image.png" alt="Facebook logo" />
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Facebook logo" />
 				</a>
 
 				<a href="https://www.instagram.com/">
-					<img class="footer_socialmedia_icon" src="../../static/instagram_image.png" alt="Instagram logo" />
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Instagram logo" />
 				</a>
 
 				<a href="https://x.com/">
-					<img class="footer_socialmedia_icon" src="../../static/x_image.png" alt="X logo" />
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="X logo" />
 				</a>
 			</div>
 		</div>

@@ -1,7 +1,6 @@
 /* Main body styling with light blue background and cursive font */
 body {
   background-color: #79edff70;
-  font-family: cursive;
 }
 
 /* Greeting section at top of about page */
@@ -107,7 +106,7 @@ body {
   overflow: hidden;
   background:
     linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
-    url('../../static/one_piece.png') center/cover no-repeat;
+    url('../../static/general_ui_images/one_piece.png') center/cover no-repeat;
 }
 
 /* Favorite anime title overlay */
