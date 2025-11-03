@@ -3,7 +3,7 @@ body {
   background-color: #79edff70;
 }
 
-#contacts_ui_spacing {
+#contacts_ul_spacing {
 
     margin-top: 20vh; 
     margin-left: 5vw;
@@ -17,9 +17,7 @@ body {
 
 .contacts_socialmedia_info {
     align-items: center;
-    gap: 1vw;
-    list-style-type: circle;
-    /* list-style-image: url("../../static/chibi-anime-girl-bulletpoint.png"); */
+    list-style: none;
 }
 
 .contacts_socialmedia_text {
@@ -32,6 +30,12 @@ body {
     text-justify: center;
     align-content: center;
     gap: 1vw;
+    margin-left: 0.5vw;
+}
+
+li:before {
+    content: "\2605";
+    color: rgb(45, 119, 51);
 }
 
 /* Form header styling */
