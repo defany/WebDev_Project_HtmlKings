@@ -5,7 +5,20 @@
 }
 
 .contacts_socialmedia_info {
-    display: inline-flex;
     align-items: center;
+    gap: 1vw;
+    list-style-type: circle;
+    list-style-image: url("../../static/chibi-anime-girl-bulletpoint.png");
+}
+
+.contacts_socialmedia_text {
+    margin: auto;
+}
+
+.contacts_socialmedia_pair {
+    display: inline-flex;
+    text-align: center;
+    text-justify: center;
+    align-content: center;
     gap: 1vw;
 }
