@@ -67,6 +67,12 @@
     margin-bottom: 0;
 }
 
+/* Footer links so they will not be highlighted */
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Main footer text area container */
 .footer_main_text_container {
     position: relative;
@@ -76,7 +82,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* Individual text lines in footer */
