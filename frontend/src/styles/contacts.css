@@ -1,7 +1,12 @@
 /* Main body styling with light blue background and cursive font */
 body {
   background-color: #79edff70;
-  font-family: cursive;
+}
+
+#contacts_ui_spacing {
+
+    margin-top: 20vh; 
+    margin-left: 5vw;
 }
 
 .contacts_socialmedia_icon {
@@ -31,7 +36,6 @@ body {
 
 /* Form header styling */
 #form_header {
-    font-family: cursive;
     font-size: 30px;
     padding-left: 1em;
 }
@@ -39,7 +43,7 @@ body {
 /* Main form container layout */
 #form_overall_container_layout {
     display: block;
-    margin-left: 0.5em;
+    margin-left: 5vw;
     margin-top: 0.5em;
 }
 
@@ -53,7 +57,6 @@ body {
 
 /* Form label text styling with fixed width for alignment */
 .form_text_style {
-    font-family: cursive;
     font-size: 18px;
     min-width: 30%;
 }
@@ -65,7 +68,6 @@ body {
     min-width: 200px;
 
     padding: 10px;
-    font-family: cursive;
     font-size: 16px;
 
     /* Include padding in height calculation,
@@ -76,7 +78,6 @@ body {
 
 /* Form button styling for submit and reset actions */
 .form_button_style {
-    font-family: cursive;
     font-size: 18px;
     margin-top: 0.5em;
     padding-left: 0px;

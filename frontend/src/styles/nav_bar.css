@@ -44,14 +44,12 @@
     height: 2.5em;
     line-height: 2.5em;
     color: white;
-    font-family: cursive;
     font-size: 16px;
 }
 
 /* Circular profile button at the end of navigation */
 #profile_button {
     color: white;
-    font-family: cursive;
     font-size: 16px;
     border: solid white;
     padding: 2em;

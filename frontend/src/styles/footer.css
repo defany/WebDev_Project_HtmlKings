@@ -27,7 +27,6 @@
 
 /* Individual text lines in footer */
 .footer_main_text {
-    font-family: cursive;
     text-align: center;
     line-height: 2vh;
 }
@@ -56,7 +55,6 @@
 
 /* Last updated date text styling */
 .footer_date_text {
-    font-family: cursive;
     height: 5vh;
     width: 20vw;
     margin-top: 5vh;
