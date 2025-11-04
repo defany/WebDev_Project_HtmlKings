@@ -12,7 +12,7 @@ body {
 
 /* Main heading in greeting section */
 .greeting__block h1 {
-  font-size: 56px;
+  font-size: 56px;  
   font-weight: 700;
   margin: 0;
   color: #000;
