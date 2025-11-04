@@ -114,3 +114,9 @@ body {
 .sub_paragraph {
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+    .slider_container {
+        flex-direction: column;
+    }
+}

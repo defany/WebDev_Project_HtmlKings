@@ -4,7 +4,6 @@ body {
 }
 
 #contacts_ui_spacing {
-
     margin-top: 20vh; 
     margin-left: 5vw;
 }
@@ -87,4 +86,35 @@ li:before {
     padding-left: 0px;
     min-width: 150px;
     min-height: 40px;
+}
+
+@media (max-width: 600px) {
+    /* Adjust form layout for small screens */
+    #form_overall_container_layout {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .form_div_layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form_text_style {
+        min-width: auto;
+        margin-bottom: 0.5em;
+    }
+
+    #contacts_ui_spacing {
+        margin-left: 0vw;
+    }
+
+    .contacts_socialmedia_text {
+        font-size: 14px;
+    }
+
+    .contacts_socialmedia_icon {
+        height: 3vh;
+        width: 3vh;
+    }
 }
