@@ -31,7 +31,7 @@ jobs:
           mkdir -p out/styles out/static
           cp -r frontend/src/public/* out/
           cp -r frontend/src/styles/* out/styles/
-          cp -r frontend/src/static/* out/static/ 2>/dev/null || true
+          cp -r frontend/static/* out/static/ 2>/dev/null || true
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./\.\./static/|static/|g'
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./static/|static/|g'
           find out -type f -name "*.css" -print0 | xargs -0 sed -i 's|\.\./\.\./static/|\.\./static/|g'
