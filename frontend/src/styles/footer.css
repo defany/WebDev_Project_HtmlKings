@@ -68,8 +68,8 @@
     margin: auto;
 }
 
+/* Mobile responsiveness for screens smaller than 600px */
 @media (max-width: 600px) {
-    /* Adjust footer layout for small screens */
     .footer_main_text_container {
         flex-direction: column;
         height: auto;

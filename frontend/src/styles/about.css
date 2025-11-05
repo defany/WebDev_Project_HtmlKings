@@ -1,6 +1,7 @@
 /* Main body styling with light blue background and cursive font */
 body {
   background-color: #79edff70;
+  font-family: 'Nunito';
 }
 
 /* Greeting section at top of about page */
@@ -12,7 +13,7 @@ body {
 
 /* Main heading in greeting section */
 .greeting__block h1 {
-  font-size: 56px;  
+  font-size: 40px;  
   font-weight: 700;
   margin: 0;
   color: #000;
@@ -20,7 +21,7 @@ body {
 
 /* Subheading in greeting section with author name */
 .greeting__block h2 {
-  font-size: 66px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
   color: #222;

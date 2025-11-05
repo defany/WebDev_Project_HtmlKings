@@ -1,28 +1,41 @@
 /* Main body styling with light blue background and cursive font */
 body {
-  background-color: #bae6fc;
+  background-color: #79edff70;
+  font-family: 'Nunito';
 }
 
+/* Contacts section spacing from top and left */
 #contacts_ui_spacing {
     margin-top: 20vh; 
     margin-left: 5vw;
 }
 
+/* Contacts header font size */
+#contacts_ui_spacing h2 {
+
+    font-size: 30px;
+}
+
+/* Social media icon sizing */
 .contacts_socialmedia_icon {
     height: 5vh;
     width: 5vh;
     margin: auto;
 }
 
+/* Social media list container */
 .contacts_socialmedia_info {
     align-items: center;
     list-style: none;
 }
 
+/* Social media text styling */
 .contacts_socialmedia_text {
     margin: auto;
+    font-size: 18px;
 }
 
+/* Social media icon and text pair layout */
 .contacts_socialmedia_pair {
     display: inline-flex;
     text-align: center;
@@ -32,6 +45,7 @@ body {
     margin-left: 0.5vw;
 }
 
+/* Custom bullet points for list items */
 li:before {
     content: "\2605";
     color: rgb(45, 119, 51);
@@ -67,11 +81,11 @@ li:before {
 /* Form input field styling with consistent sizing */
 .form_input_style {
     flex: 1;
-    max-width: 400px;
+    max-width: 500px;
     min-width: 200px;
 
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
 
     /* Include padding in height calculation,
     Note: Was the only way to get the drop down box to match same size as the other input fields */
@@ -82,12 +96,14 @@ li:before {
 /* Form button styling for submit and reset actions */
 .form_button_style {
     font-size: 18px;
+    font-family: 'Nunito';
     margin-top: 0.5em;
     padding-left: 0px;
     min-width: 150px;
     min-height: 40px;
 }
 
+/* Mobile responsiveness for screens smaller than 600px */
 @media (max-width: 600px) {
     /* Adjust form layout for small screens */
     #form_overall_container_layout {

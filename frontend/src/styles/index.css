@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Nunito';
 }
 
 /* Featured series banner at top of homepage */
@@ -81,6 +82,12 @@ body {
     transform: rotate(45deg);
 }
 
+/* Next arrow button hover effect */
+.arrow_next:hover {
+
+    transform: rotate(45deg) scale(1.15);
+}
+
 /* Left-pointing arrow */
 .arrow_previous {
     display: block;
@@ -94,6 +101,12 @@ body {
     padding: 1em;
     margin-left: 2em;
     transform: rotate(45deg);
+}
+
+/* Previous arrow button hover effect */
+.arrow_previous:hover {
+
+    transform: rotate(45deg) scale(1.15);
 }
 
 /* Main heading above the image slider */

@@ -37,10 +37,11 @@
     transition: all 1s;
 }
 
+/* Homepage button hover effects */
 #homepage_button_img:hover {
     border-color: purple;
-    transform: translateY(-4px) scale(1.10);
-    box-shadow: 2px 2px 1.5em rgb(0, 255, 170);
+    transform: translateY(-4px) scale(1.10); /* Lift up and scale effect */
+    box-shadow: 2px 2px 1.5em rgb(0, 255, 170);  /* Cyan glow shadow */
     transition: all 2s;
 }
 
@@ -59,6 +60,7 @@
     font-size: 16px;
 }
 
+/* Navigation buttons hover effect */
 .navbar_other_buttons:hover {
 
     background-color: gray;
@@ -73,8 +75,9 @@
     border-radius: 50%;
 }
 
+/* Profile button hover effect */
 #profile_button:hover {
 
     background-color: gray;
-    box-shadow: 1px 1px 1em rgb(0, 255, 170);
+    box-shadow: 1px 1px 1em rgb(0, 255, 170); /* Cyan glow shadow */
 }
