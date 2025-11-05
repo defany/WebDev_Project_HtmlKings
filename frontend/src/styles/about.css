@@ -161,7 +161,6 @@ p {
 .arrow_previous {
   position: absolute;
   top: 45%;
-  transform: translateY(-50%) rotate(45deg);
   width: 0;
   height: 0;
   border: solid black;
@@ -180,13 +179,6 @@ p {
 .arrow_previous {
   left: 2%;
   border-width: 5px 0 0 5px;
-}
-
-/* Hover effect */
-.arrow_next:hover,
-.arrow_previous:hover {
-  transform: translateY(-50%) rotate(45deg) scale(1.25);
-  opacity: 1;
 }
 
 /* Tablet and smaller screen responsive styles */
