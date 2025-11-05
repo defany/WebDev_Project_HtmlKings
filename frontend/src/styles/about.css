@@ -4,6 +4,22 @@ body {
   font-family: 'Nunito';
 }
 
+h1 {
+  font-size: 40px !important;
+}
+
+h2 {
+  font-size: 30px !important;
+}
+
+h3 {
+  font-size: 25px !important;
+}
+
+p {
+  font-size: 18px !important;
+}
+
 /* Greeting section at top of about page */
 .greeting__block {
   padding-top: 15vh;
@@ -13,7 +29,6 @@ body {
 
 /* Main heading in greeting section */
 .greeting__block h1 {
-  font-size: 40px;  
   font-weight: 700;
   margin: 0;
   color: #000;
@@ -21,7 +36,6 @@ body {
 
 /* Subheading in greeting section with author name */
 .greeting__block h2 {
-  font-size: 20px;
   font-weight: 700;
   margin: 0;
   color: #222;
@@ -84,16 +98,14 @@ body {
 
 /* About page section headings */
 .about_text h3 {
-  font-size: 3.2rem;
   font-weight: 700;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 /* About page paragraph text */
 .about_text p {
-  margin: .25rem 0;
+  margin: 0.25rem 0;
   line-height: 1.6;
-  font-size: 1.3rem;
   text-align: left;
 }
 
@@ -106,7 +118,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background:
-    linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url('../../static/general_ui_images/one_piece.png') center/cover no-repeat;
 }
 
@@ -120,7 +132,7 @@ body {
   color: #fff;
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, .45);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
 
 /* Favorite anime description overlay */
@@ -134,16 +146,47 @@ body {
   padding: 1rem 1.25rem;
   color: #fff;
   line-height: 1.6;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  background: rgba(0, 0, 0, .45);
+  background: rgba(0, 0, 0, 0.45);
   border-radius: 10px;
   backdrop-filter: blur(2px);
 }
 
 /* Favorite anime section title */
 .favorite_animes_section__title {
-  font-size: 2.5em;
   text-align: center;
+}
+
+/* ===== Arrows for the slider ===== */
+.arrow_next,
+.arrow_previous {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 0;
+  height: 0;
+  border: solid black;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+/* Right arrow */
+.arrow_next {
+  right: 2%;
+  border-width: 0 5px 5px 0;
+}
+
+/* Left arrow */
+.arrow_previous {
+  left: 2%;
+  border-width: 5px 0 0 5px;
+}
+
+/* Hover effect */
+.arrow_next:hover,
+.arrow_previous:hover {
+  transform: translateY(-50%) rotate(45deg) scale(1.25);
+  opacity: 1;
 }
 
 /* Tablet and smaller screen responsive styles */
@@ -193,11 +236,19 @@ body {
     left: 5%;
     right: 5%;
     bottom: 5%;
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .about_photo img {
     max-width: 90%;
     height: 44vh;
+  }
+
+  .arrow_next {
+    right: 4%;
+  }
+
+  .arrow_previous {
+    left: 4%;
   }
 }
