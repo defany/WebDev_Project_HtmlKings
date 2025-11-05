@@ -1,0 +1,97 @@
+
+/* Footer container that sticks to bottom of page */
+.footer {
+    position: relative;
+    /* Pushes footer to bottom in flex layouts */
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+/* Footer links so they will not be highlighted */
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main footer text area container */
+.footer_main_text_container {
+    position: relative;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Individual text lines in footer */
+.footer_main_text {
+    text-align: center;
+    line-height: 2vh;
+}
+
+/* Container for date and social media logos */
+.footer_datelogos_container {
+    margin: auto;
+    height: 5vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Social media icons container aligned to right */
+.footer_logos_container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    gap: 2vw;
+}
+
+/* Last updated date text styling */
+.footer_date_text {
+    height: 5vh;
+    width: 20vw;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/* Social media icon sizing */
+.footer_socialmedia_icon {
+    height: 5vh;
+    width: 5vh;
+    margin: auto;
+}
+
+/* Mobile responsiveness for screens smaller than 600px */
+@media (max-width: 600px) {
+    .footer_main_text_container {
+        flex-direction: column;
+        height: auto;
+        padding: 1em 0;
+    }
+
+    .footer_datelogos_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_logos_container {
+        justify-content: center;
+        margin-top: 2vh;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 3vw;
+    }
+
+    .footer_date_text {
+        width: auto;
+        margin: auto;
+    }
+}

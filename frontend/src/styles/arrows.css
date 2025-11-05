@@ -1,0 +1,38 @@
+/* Right-pointing arrow */
+.arrow_next {
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 5px solid;
+	border-bottom: 5px hidden;
+	border-left: 5px hidden;
+	border-right: 5px solid;
+	border-left-color: black;
+	padding: 1em;
+	margin-right: 2em;
+  transform: translateY(-50%) rotate(45deg);
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect */
+.arrow_next:hover,
+.arrow_previous:hover {
+  transform: translateY(-50%) rotate(45deg) scale(1.25);
+  opacity: 1;
+}
+
+/* Left-pointing arrow */
+.arrow_previous {
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 5px hidden;
+	border-bottom: 5px solid;
+	border-left: 5px solid;
+	border-right: 5px hidden;
+	border-left-color: black;
+	padding: 1em;
+	margin-left: 2em;
+  transform: translateY(-50%) rotate(45deg);
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}

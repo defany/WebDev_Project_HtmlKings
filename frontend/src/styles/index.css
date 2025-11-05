@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Nunito';
 }
 
 /* Featured series banner at top of homepage */
@@ -16,7 +17,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../../static/one_piece.png') center/cover no-repeat;
+        url('../../static/general_ui_images/one_piece.png') center/cover no-repeat;
 }
 
 /* Text container within featured series banner */
@@ -31,7 +32,6 @@ body {
     font-size: 40px;
     margin-top: 4em;
     color: white;
-    font-family: cursive;
 }
 
 /* Description text in featured series banner */
@@ -40,7 +40,6 @@ body {
     width: 50vw;
     margin-top: 5em;
     color: white;
-    font-family: cursive;
 }
 
 /* Layout container for image slider with navigation arrows */
@@ -68,39 +67,8 @@ body {
     border: solid black 8px;
 }
 
-/* Right-pointing arrow */
-.arrow_next {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 5px solid;
-    border-bottom: 5px hidden;
-    border-left: 5px hidden;
-    border-right: 5px solid;
-    border-left-color: black;
-    padding: 1em;
-    margin-right: 2em;
-    transform: rotate(45deg);
-}
-
-/* Left-pointing arrow */
-.arrow_previous {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 5px hidden;
-    border-bottom: 5px solid;
-    border-left: 5px solid;
-    border-right: 5px hidden;
-    border-left-color: black;
-    padding: 1em;
-    margin-left: 2em;
-    transform: rotate(45deg);
-}
-
 /* Main heading above the image slider */
 .main_slider_header {
-    font-family: cursive;
     font-size: 30px;
     color: black;
     text-align: center;
@@ -110,67 +78,10 @@ body {
 
 /* Secondary heading style */
 .sub_heading {
-    font-family: cursive;
     font-size: 25px;
 }
 
 /* Paragraph text style */
 .sub_paragraph {
-    font-family: cursive;
     font-size: 18px;
-}
-
-/* Form header styling */
-#form_header {
-    font-family: cursive;
-    font-size: 30px;
-    padding-left: 1em;
-}
-
-/* Main form container layout */
-#form_overall_container_layout {
-    display: block;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-}
-
-/* Individual form row layout with flex alignment */
-.form_div_layout {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding: 0.5em;
-}
-
-/* Form label text styling with fixed width for alignment */
-.form_text_style {
-    font-family: cursive;
-    font-size: 18px;
-    min-width: 30%;
-}
-
-/* Form input field styling with consistent sizing */
-.form_input_style {
-    flex: 1;
-    max-width: 400px;
-    min-width: 200px;
-
-    padding: 10px;
-    font-family: cursive;
-    font-size: 16px;
-
-    /* Include padding in height calculation,
-    Note: Was the only way to get the drop down box to match same size as the other input fields */
-    box-sizing: border-box;
-
-}
-
-/* Form button styling for submit and reset actions */
-.form_button_style {
-    font-family: cursive;
-    font-size: 18px;
-    margin-top: 0.5em;
-    padding-left: 0px;
-    min-width: 150px;
-    min-height: 40px;
 }

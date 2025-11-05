@@ -1,0 +1,83 @@
+/* Main navigation bar container using flexbox layout */
+.nav_bar_layout {
+    background-color: rgba(40, 40, 40, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+
+    /* Pinning navigation bar to the top of the page */
+    position: fixed;
+    top: 0;
+    right: 0;   
+    left: 0;
+    z-index: 1000;
+    /* Personal note: This ensure nothing is ever in front of the navigation bar*/
+}
+
+/* Homepage button container with specific dimensions */
+#homepage_button {
+
+    width: 15em;
+    height: 2.5em;
+    padding-bottom: 5px;
+}
+
+/* Homepage button image styling with purple border */
+#homepage_button_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    border: solid 5px;
+    border-color: transparent;
+    transition: all 1s;
+}
+
+/* Homepage button hover effects */
+#homepage_button_img:hover {
+    border-color: purple;
+    transform: translateY(-4px) scale(1.10); /* Lift up and scale effect */
+    box-shadow: 2px 2px 1.5em rgb(0, 255, 170);  /* Cyan glow shadow */
+    transition: all 2s;
+}
+
+/* Individual navigation buttons (About, Contact, etc.) */
+.navbar_other_buttons {
+    justify-content: center;
+    display: inline-block;
+    border: solid white;
+    border-radius: 2em;
+    padding-inline: 0.5em;
+    margin-inline: 1em;
+    width: 8em;
+    height: 2.5em;
+    line-height: 2.5em;
+    color: white;
+    font-size: 16px;
+}
+
+/* Navigation buttons hover effect */
+.navbar_other_buttons:hover {
+
+    background-color: gray;
+}
+
+/* Circular profile button at the end of navigation */
+#profile_button {
+    color: white;
+    font-size: 16px;
+    border: solid white;
+    padding: 1.5em;
+    border-radius: 50%;
+}
+
+/* Profile button hover effect */
+#profile_button:hover {
+
+    background-color: gray;
+    box-shadow: 1px 1px 1em rgb(0, 255, 170); /* Cyan glow shadow */
+}
