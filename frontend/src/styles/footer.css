@@ -5,6 +5,7 @@
     /* Pushes footer to bottom in flex layouts */
     margin-top: auto;
     margin-bottom: 0;
+    font-size: 16px;
 }
 
 /* Footer links so they will not be highlighted */
