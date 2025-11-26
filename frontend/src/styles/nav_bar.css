@@ -96,6 +96,7 @@
     text-decoration: none;
 }
 
+/* Mobile responsive styles for screens up to 768px */
 @media (max-width: 768px)
 {
     #hopemage_button {
@@ -109,6 +110,7 @@
     }
 }
 
+/* Small mobile responsive styles for screens up to 520px */
 @media (max-width: 520px)
 {
     #hopemage_button {
