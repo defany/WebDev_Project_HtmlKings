@@ -2,6 +2,7 @@
 body {
   background-color: #79edff70;
   font-family: 'Nunito';
+  min-height: 100vh;
 }
 
 h1 {
@@ -156,31 +157,6 @@ p {
   text-align: center;
 }
 
-/* ===== Arrows for the slider ===== */
-/*.arrow_next,
-.arrow_previous {
-  position: absolute;
-  top: 45%;
-  width: 0;
-  height: 0;
-  border: solid black;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  opacity: 0.8;
-}
-
-/* Right arrow */
-/*.arrow_next {
-  right: 2%;
-  border-width: 0 5px 5px 0;
-}
-
-/* Left arrow */
-/*.arrow_previous {
-  left: 2%;
-  border-width: 5px 0 0 5px;
-}*/
-
 .arrows_container {
   margin-top: 5vh;
   display: flex;
@@ -190,6 +166,10 @@ p {
 
 /* Tablet and smaller screen responsive styles */
 @media (max-width: 992px) {
+  .greeting__block {
+    margin-top: 5vh;
+  }
+
   .about_row {
     flex-wrap: wrap;
     gap: 2rem;
@@ -220,6 +200,10 @@ p {
 
 /* Mobile responsive styles */
 @media (max-width: 520px) {
+  .greeting__block {
+    margin-top: 5vh;
+  }
+
   .favorite_animes {
     width: 92vw;
     height: 56vh;
