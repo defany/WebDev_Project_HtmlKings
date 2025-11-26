@@ -2,8 +2,6 @@
 body {
     margin: 0;
     background-color: #79edff70;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: 'Nunito';
 }

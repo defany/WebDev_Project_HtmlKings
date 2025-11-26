@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/shop.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav_bar.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css" />
+    <!--Including google font sheet for Nunito-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+		rel="stylesheet"
+	/>
+    <title>Anime Haven/Shop</title>
+</head>
+
+<body>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Navigation Bar Begin-->
+	<!--------------------------------------------------------------------------------------------->
+	<nav class="nav_bar_layout">
+		<!--Homepage Button-->
+		<div id="homepage_button">
+			<a href="index.html" aria-label="Go to Home page">
+				<img
+					src="../../static/general_ui_images/homepage_image.png"
+					alt="Image of our homepage navigation bar button"
+					id="homepage_button_img"/>
+			</a>
+		</div>
+
+		<!--Other Buttons-->
+		<div>
+			<span class="navbar_other_buttons">
+				<a href="about.html" aria-label="Go to About Author page">About Author</a>
+			</span>
+			
+			<span class="navbar_other_buttons">
+				<a href="contacts.html" aria-label="Go to Contact Us page">Contact Us</a>
+			</span>
+
+			<span class="navbar_other_buttons">Forums</span>
+            
+				<span class="navbar_other_buttons">
+					<a href="shop.html" aria-label="Go to Shop page">Shop</a>
+				</span>
+            
+			<span class="navbar_other_buttons">FAQ</span>
+		</div>
+
+		<!--Profile Button-->
+		<div id="profile_button">Profile</div>
+	</nav>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Navigation Bar End-->
+	<!--------------------------------------------------------------------------------------------->
+
+	<h1>Welcome to our Shop!</h1>
+
+	<!--------------------------------------------------------------------------------------------->
+	<!--Shop Search and Filter Bar Starts-->
+	<!--------------------------------------------------------------------------------------------->
+	<section id="shop_container_layout">
+
+		<div id="search_box">
+			<label for="search_field">Search for a product:</label>
+			<input type="text" id="search_field" name="search_field">
+		</div>
+
+		<div id="shop_right_container">
+
+			<div>
+				<button type="button">View your cart</button>
+			</div>
+
+			<div>
+				<button type="button">Asc / Desc</button>
+			</div>
+
+			<div>
+				<label for="filters">Choose a filter:</label>
+
+  				<select name="filters" id="filters">
+    				<option value="price">Price</option>
+    				<option value="type">Product Type</option>
+    				<option value="colour">Colour</option>
+    				<option value="date_uploaded">Date product was produced</option>
+  				</select>
+			</div>
+
+		</div>
+
+	</section>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Shop Search and Filter Bar Ends-->
+	<!--------------------------------------------------------------------------------------------->
+
+	<!--------------------------------------------------------------------------------------------->
+	<!--Products for sale Starts-->
+	<!--------------------------------------------------------------------------------------------->
+	<!--Mangas for sale-->
+	<section class="products_row_layout">
+
+		<div class="max_size">
+			<img src="../../static/shop_images/jjk_product.png" alt="Image of JJK Manage volume 2." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 13€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>JJK Manga volume 2.</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/naruto_product.png" alt="Image of Naruto Manage 3 in 1 edition. (Volumes 1 to 3)." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 12.79€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Naruto Manage 3 in 1 edition. (Volumes 1 to 3).</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/one_piece_product.png" alt="One Piece Manga (Omnibus Edition), Vol. 1: Includes vols. 1, 2 & 3" class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 13.07€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>One Piece Manga (Omnibus Edition), Vol. 1: Includes vols. 1, 2 & 3.</p> 
+			</div>
+		</div>
+
+	</section>
+	
+	<!--Figurines for sale-->
+	<section class="products_row_layout">
+
+		<div class="max_size">
+			<img src="../../static/shop_images/frieren_fig.png" alt="Image of frieren figurine." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 10.99€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Frieren stuck in chest action figurine.</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/my_dress_up_darling_fig.png" alt="Image of dress up darling figurine." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 26.99€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Figurine of Marin from my dress up darling.</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/gojo_fig.png" alt="Image of Gojo from JJK." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 16.03€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Chibi figurine of Gojo sitting and smiling.</p> 
+			</div>
+		</div>
+
+	</section>
+	
+	<!--Clothing for sale-->
+	<section class="products_row_layout">
+
+		<div class="max_size">
+			<img src="../../static/shop_images/bleach_shirt.png" alt="Image of bleach anime style shirt." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 59.61€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Bleach one thousand year blood war anime shirt.</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/one_piece_hat.png" alt="Image of one piece hat clothing" class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 12.96€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>One piece hat. The one piece is the style we found along the way.</p> 
+			</div>
+		</div>
+
+		<div class="max_size">
+			<img src="../../static/shop_images/demon_hunter_shirt.png" alt="Image of demon hunter anime style shirt." class="product_image_size">
+			<div class="products_details_layout">
+				<div>Price: 129.60€</div>
+				<button type="button">Add to cart</button>
+			</div>
+			<div>
+				<p class="product_description"><b><u>Product:</u></b><br>Demon Slayer: Kimetsu no Yaiba x Team Liquid - Tanjiro Varsity Jacket.</p> 
+			</div>
+		</div>
+
+	</section>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Products for sale Ends-->
+	<!--------------------------------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------------->
+	<!--Footer starts-->
+	<!--------------------------------------------------------------------------------------------->
+	<footer class="footer">
+		<br /><br />
+		<hr />
+
+		<!--Main footer text section with copyright and legal links-->
+		<div class="footer_main_text_container">
+			<!--Last updated date display-->
+			<div class="footer_date_text">Last Updated: 26/11/2025</div>
+			<div>
+				<div class="footer_main_text">
+					© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
+					<a href="contacts.html" title="Go to Contact Us">Contact</a>
+				</div>
+				<div class="footer_main_text">
+					All rights reserved. All trademarks and logos are property of their
+					respective owners.
+				</div>
+			</div>
+			<!--Social media icons container-->
+			<div class="footer_logos_container">
+				<a href="https://discord.com/" title="Go to Discord" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Discord Logo" />
+				</a>
+
+				<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Facebook logo" />
+				</a>
+
+				<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Instagram logo" />
+				</a>
+
+				<a href="https://x.com/" title="Go to X" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="X logo" />
+				</a>
+			</div>
+		</div>
+		<br />
+	</footer>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Footer Ends-->
+	<!--------------------------------------------------------------------------------------------->
+</body>
+
+</html>
