@@ -29,8 +29,8 @@
 
 /* Homepage button image styling with purple border */
 #homepage_button_img {
-    width: 100%;
-    height: 100%;
+    width: 15em;
+    height: 2.5em;
     border-radius: 2em;
     border: solid 5px;
     border-color: transparent;
@@ -54,8 +54,8 @@
     padding-inline: 0.5em;
     margin-inline: 1em;
     width: 8em;
-    height: 2.5em;
-    line-height: 2.5em;
+    height: 2em;
+    line-height: 2em;
     color: white;
     font-size: 16px;
 }
@@ -94,4 +94,33 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
+}
+
+@media (max-width: 768px)
+{
+    #hopemage_button {
+        width: 10em;
+        padding-bottom: 3px;
+    }
+
+    .navbar_other_buttons {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px)
+{
+    #hopemage_button {
+        width: 6em;
+    }
+
+    #homepage_button_img {
+        width: 6em;
+        height: 100%;
+        border-radius: 2em;
+        border: solid 5px;
+        border-color: transparent;
+        transition: all 1s;
+    }
 }
