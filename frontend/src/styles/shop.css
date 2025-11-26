@@ -7,40 +7,10 @@ body {
 h1 {
 
     font-size: 40px;
-}
-
-/*Big block at the top of the page*/
-#special_offers_header {
-
     text-align: center;
-    padding-top: 3em;
+    margin-top: 2.8em;
+    text-decoration: underline;
 }
-
-#special_offers_container_layout {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#right_container_layout {
-
-    display: flex;
-    flex-direction: column;
-}
-
-#bottom_right_container_layout {
-    
-    display: flex;
-    flex-direction: row;
-}
-
-#special_offers_container_layout img {
-
-    display: block;
-}
-
 
 /*Shopping search bar*/
 #shop_container_layout {
