@@ -121,3 +121,98 @@ select {
     font-size: 18px;
     font-family: 'Nunito';
 }
+
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 32px;
+        margin-top: 1.5em;
+    }
+    
+    #shop_container_layout {
+        flex-direction: column;
+        gap: 1.5em;
+        margin: 1em;
+        padding: 1em;
+    }
+    
+    #search_box {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #search_field {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #shop_right_container {
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+    }
+    
+    #shop_right_container > div {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .products_row_layout {
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    .max_size {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .product_image_size {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 5/6;
+    }
+    
+    .products_details_layout {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    
+    .product_description {
+        text-align: center;
+    }
+    
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    input, select {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    #shop_container_layout, 
+    .products_row_layout {
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+    
+    .product_image_size {
+        max-width: 250px;
+    }
+}
