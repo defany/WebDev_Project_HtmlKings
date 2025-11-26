@@ -1,0 +1,83 @@
+body {
+    background-color: #79edff70;
+    font-family: 'Nunito';
+}
+
+/*Big block at the top of the page*/
+#special_offers_header {
+
+    text-align: center;
+    padding-top: 3em;
+}
+
+#special_offers_container_layout {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#right_container_layout {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom_right_container_layout {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#special_offers_container_layout img {
+
+    display: block;
+}
+
+
+
+/*Shopping search bar*/
+#shop_container_layout {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    margin: 2em;
+}
+
+#search_box {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+#shop_right_container {
+
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+#search_field {
+    padding: 0.8em 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+    width: 300px;
+    height: 20px; 
+}
+
+#search_field {
+    padding: 0.5em;
+    border: 2px solid black;
+    border-radius: 4px; 
+    width: 300px;
+    height: 20px; /
+}
+
+
+/*Product items, squres that show what can be bought*/

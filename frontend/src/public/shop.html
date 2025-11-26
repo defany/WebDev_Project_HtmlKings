@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/shop.css">
+    <link rel="stylesheet" type="text/css" href="../styles/nav_bar.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css" />
+    <!--Including google font sheet for Nunito-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+		rel="stylesheet"
+	/>
+    <title>Anime Haven/Shop</title>
+</head>
+
+<body>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Navigation Bar Begin-->
+	<!--------------------------------------------------------------------------------------------->
+	<nav class="nav_bar_layout">
+		<!--Homepage Button-->
+		<div id="homepage_button">
+			<a href="index.html" aria-label="Go to Home page">
+				<img
+					src="../../static/general_ui_images/homepage_image.png"
+					alt="Image of our homepage navigation bar button"
+					id="homepage_button_img"/>
+			</a>
+		</div>
+
+		<!--Other Buttons-->
+		<div>
+			<span class="navbar_other_buttons">
+				<a href="about.html" aria-label="Go to About Author page">About Author</a>
+			</span>
+			
+			<span class="navbar_other_buttons">
+				<a href="contacts.html" aria-label="Go to Contact Us page">Contact Us</a>
+			</span>
+
+			<span class="navbar_other_buttons">Forums</span>
+            
+				<span class="navbar_other_buttons">
+					<a href="shop.html" aria-label="Go to Shop page">Shop</a>
+				</span>
+            
+			<span class="navbar_other_buttons">FAQ</span>
+		</div>
+
+		<!--Profile Button-->
+		<div id="profile_button">Profile</div>
+	</nav>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Navigation Bar End-->
+	<!--------------------------------------------------------------------------------------------->
+	
+	<!--------------------------------------------------------------------------------------------->
+	<!--Special Offers Starts-->
+	<!--------------------------------------------------------------------------------------------->
+    <section>
+
+		<h1 id="special_offers_header">Special Offers!</h1>
+		
+		<div id="special_offers_container_layout">
+
+			<!--LEFT BLOCK-->
+			<div>
+				<img src="../../static/shop_images/cat.png" width="400px" height="400px">
+			</div>
+
+			<!--RIGHT COLLECTIVE BLOCK-->
+			<div id="right_container_layout">
+
+				<!--Top Block-->
+				<div>
+					<img src="../../static/shop_images/cat4.png" width="400px" height="200px">
+				</div>
+
+				<!--Bottom Blocks-->
+				<div id="bottom_right_container_layout">
+
+					<!--Bottom Left Block-->
+					<span><img src="../../static/shop_images/cat2.png" width="200px" height="200px"></span>
+					<!--Bottom Right Block-->
+					<span><img src="../../static/shop_images/cat3.png" width="200px" height="200px"></span>
+				</div>
+
+			</div>
+
+		</div>
+
+    </section>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Special Offers Ends-->
+	<!--------------------------------------------------------------------------------------------->
+
+
+	<section id="shop_container_layout">
+
+		<div id="search_box">
+			<label for="search_field">Search for a product:</label>
+			<input type="text" id="search_field" name="search_field">
+		</div>
+
+		<div id="shop_right_container">
+
+			<div>
+				<button type="button">View your cart</button>
+			</div>
+
+			<div>
+				<button type="button">Asc / Desc</button>
+			</div>
+
+			<div>
+				<label for="filters">Choose a filter:</label>
+
+  				<select name="filters" id="filters">
+    				<option value="price">Price</option>
+    				<option value="type">Product Type</option>
+    				<option value="colour">Colour</option>
+    				<option value="date_uploaded">Date product was produced</option>
+  				</select>
+			</div>
+
+		</div>
+
+	</section>
+
+
+    <!--------------------------------------------------------------------------------------------->
+	<!--Footer starts-->
+	<!--------------------------------------------------------------------------------------------->
+	<footer class="footer">
+		<br /><br />
+		<hr />
+
+		<!--Main footer text section with copyright and legal links-->
+		<div class="footer_main_text_container">
+			<!--Last updated date display-->
+			<div class="footer_date_text">Last Updated: 05/11/2025</div>
+			<div>
+				<div class="footer_main_text">
+					© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
+					<a href="contacts.html" title="Go to Contact Us">Contact</a>
+				</div>
+				<div class="footer_main_text">
+					All rights reserved. All trademarks and logos are property of their
+					respective owners.
+				</div>
+			</div>
+			<!--Social media icons container-->
+			<div class="footer_logos_container">
+				<a href="https://discord.com/" title="Go to Discord" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Discord Logo" />
+				</a>
+
+				<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Facebook logo" />
+				</a>
+
+				<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Instagram logo" />
+				</a>
+
+				<a href="https://x.com/" title="Go to X" target="_blank">
+					<img class="footer_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="X logo" />
+				</a>
+			</div>
+		</div>
+		<br />
+	</footer>
+	<!--------------------------------------------------------------------------------------------->
+	<!--Footer Ends-->
+	<!--------------------------------------------------------------------------------------------->
+</body>
+
+</html>
