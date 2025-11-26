@@ -70,7 +70,7 @@
 }
 
 /* Mobile responsiveness for screens smaller than 600px */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .footer_main_text_container {
         flex-direction: column;
         height: auto;

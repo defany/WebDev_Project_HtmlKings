@@ -157,7 +157,7 @@ p {
 }
 
 /* ===== Arrows for the slider ===== */
-.arrow_next,
+/*.arrow_next,
 .arrow_previous {
   position: absolute;
   top: 45%;
@@ -170,15 +170,22 @@ p {
 }
 
 /* Right arrow */
-.arrow_next {
+/*.arrow_next {
   right: 2%;
   border-width: 0 5px 5px 0;
 }
 
 /* Left arrow */
-.arrow_previous {
+/*.arrow_previous {
   left: 2%;
   border-width: 5px 0 0 5px;
+}*/
+
+.arrows_container {
+  margin-top: 5vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 /* Tablet and smaller screen responsive styles */
