@@ -16,45 +16,50 @@
 	</head>
 
 	<body>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Navigation Bar Begin-->
-	<!--------------------------------------------------------------------------------------------->
-	<nav class="nav_bar_layout">
-		<!--Homepage Button-->
-		<div id="homepage_button">
-			<a href="index.html" aria-label="Go to Home page">
-				<img
-					src="../../static/general_ui_images/homepage_image.png"
-					alt="Image of our homepage navigation bar button"
-					id="homepage_button_img"/>
-			</a>
-		</div>
+		<!--------------------------------------------------------------------------------------------->
+		<!--Navigation Bar Begin-->
+		<!--------------------------------------------------------------------------------------------->
+		<nav class="nav_bar_layout">
+			<!--Homepage Button-->
+			<div id="homepage_button">
+				<a href="index.html" aria-label="Go to Home page">
+					<img
+						src="../../static/general_ui_images/homepage_image.png"
+						alt="Image of our homepage navigation bar button"
+						id="homepage_button_img"
+					/>
+				</a>
+			</div>
 
-		<!--Other Buttons-->
-		<div>
-			<span class="navbar_other_buttons">
-				<a href="about.html" aria-label="Go to About Author page">About Author</a>
-			</span>
-			
-			<span class="navbar_other_buttons">
-				<a href="contacts.html" aria-label="Go to Contact Us page">Contact Us</a>
-			</span>
+			<!--Other Buttons-->
+			<div>
+				<span class="navbar_other_buttons">
+					<a href="about.html" aria-label="Go to About Author page"
+						>About Author</a
+					>
+				</span>
 
-			<span class="navbar_other_buttons">Forums</span>
-            
+				<span class="navbar_other_buttons">
+					<a href="contacts.html" aria-label="Go to Contact Us page"
+						>Contact Us</a
+					>
+				</span>
+
+				<span class="navbar_other_buttons">Forums</span>
+
 				<span class="navbar_other_buttons">
 					<a href="shop.html" aria-label="Go to Shop page">Shop</a>
 				</span>
-            
-			<span class="navbar_other_buttons">FAQ</span>
-		</div>
 
-		<!--Profile Button-->
-		<div id="profile_button">Profile</div>
-	</nav>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Navigation Bar End-->
-	<!--------------------------------------------------------------------------------------------->
+				<span class="navbar_other_buttons">FAQ</span>
+			</div>
+
+			<!--Profile Button-->
+			<div id="profile_button">Profile</div>
+		</nav>
+		<!--------------------------------------------------------------------------------------------->
+		<!--Navigation Bar End-->
+		<!--------------------------------------------------------------------------------------------->
 
 		<!--------------------------------------------------------------------------------------------->
 		<!--Author Introduction Section Begin-->
@@ -104,7 +109,7 @@
 			<div class="about_row about_row--right">
 				<div class="about_photo">
 					<img
-						src="../../static/author_images/author_photo_full_height.png"
+						src="../../static/author_images/author_photo_portrait.png"
 						alt="Poster"
 					/>
 				</div>
@@ -142,12 +147,12 @@
 					adventure, and the emotions hit just as strong even after hundreds of
 					episodes.
 				</p>
+				<div class="arrows_container arrows_container--favorites">
+					<span class="arrow_previous"></span>
+					<span class="arrow_next"></span>
+				</div>
 			</section>
 		</section>
-		<div class="arrows_container">
-			<span class="arrow_previous"></span>
-			<span class="arrow_next"></span>
-		</div>
 		<!--------------------------------------------------------------------------------------------->
 		<!--Favorite Anime Section End-->
 		<!--------------------------------------------------------------------------------------------->
@@ -159,43 +164,69 @@
 			<br /><br />
 			<hr />
 
-		<!--Main footer text section with copyright and legal links-->
-		<div class="footer_main_text_container">
-			<!--Last updated date display-->
-			<div class="footer_date_text">Last Updated: 26/11/2025</div>
-			<div>
-				<div class="footer_main_text">
-					© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
-					<a href="contacts.html" title="Go to Contact Us">Contact</a>
+			<!--Main footer text section with copyright and legal links-->
+			<div class="footer_main_text_container">
+				<!--Last updated date display-->
+				<div class="footer_date_text">Last Updated: 26/11/2025</div>
+				<div>
+					<div class="footer_main_text">
+						© 2025 Anime Haven | Privacy Policy | Terms of Use | FAQ |
+						<a href="contacts.html" title="Go to Contact Us">Contact</a>
+					</div>
+					<div class="footer_main_text">
+						All rights reserved. All trademarks and logos are property of their
+						respective owners.
+					</div>
 				</div>
-				<div class="footer_main_text">
-					All rights reserved. All trademarks and logos are property of their
-					respective owners.
+				<!--Social media icons container-->
+				<div class="footer_logos_container">
+					<a href="https://discord.com/" title="Go to Discord" target="_blank">
+						<img
+							class="footer_socialmedia_icon"
+							src="../../static/social_media_images/discord_image.png"
+							alt="Discord Logo"
+						/>
+					</a>
+
+					<a
+						href="https://www.facebook.com/"
+						title="Go to Facebook"
+						target="_blank"
+					>
+						<img
+							class="footer_socialmedia_icon"
+							src="../../static/social_media_images/facebook_image.png"
+							alt="Facebook logo"
+						/>
+					</a>
+
+					<a
+						href="https://www.instagram.com/"
+						title="Go to Instagram"
+						target="_blank"
+					>
+						<img
+							class="footer_socialmedia_icon"
+							src="../../static/social_media_images/instagram_image.png"
+							alt="Instagram logo"
+						/>
+					</a>
+
+					<a href="https://x.com/" title="Go to X" target="_blank">
+						<img
+							class="footer_socialmedia_icon"
+							src="../../static/social_media_images/x_image.png"
+							alt="X logo"
+						/>
+					</a>
 				</div>
 			</div>
-			<!--Social media icons container-->
-			<div class="footer_logos_container">
-				<a href="https://discord.com/" title="Go to Discord" target="_blank">
-					<img class="footer_socialmedia_icon" src="../../static/social_media_images/discord_image.png" alt="Discord Logo" />
-				</a>
-
-				<a href="https://www.facebook.com/" title="Go to Facebook" target="_blank">
-					<img class="footer_socialmedia_icon" src="../../static/social_media_images/facebook_image.png" alt="Facebook logo" />
-				</a>
-
-				<a href="https://www.instagram.com/" title="Go to Instagram" target="_blank">
-					<img class="footer_socialmedia_icon" src="../../static/social_media_images/instagram_image.png" alt="Instagram logo" />
-				</a>
-
-				<a href="https://x.com/" title="Go to X" target="_blank">
-					<img class="footer_socialmedia_icon" src="../../static/social_media_images/x_image.png" alt="X logo" />
-				</a>
-			</div>
-		</div>
-		<br />
+			<br />
 		</footer>
 		<!--------------------------------------------------------------------------------------------->
 		<!--Footer Ends-->
 		<!--------------------------------------------------------------------------------------------->
+
+		<script src="../app/favorite_animes_slider.js"></script>
 	</body>
 </html>

@@ -8,7 +8,7 @@ body {
 
 /* Featured series banner at top of homepage */
 .series__block {
-    height: 95vh;
+    height: 80vh;
     position: relative;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -27,16 +27,16 @@ body {
 
 /* Main title in featured series banner */
 .series__block_info h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 4em;
     color: white;
 }
 
 /* Description text in featured series banner */
 .series__block_info p {
-    font-size: 20px;
+    font-size: 30px;
     width: 50vw;
-    margin-top: 5em;
+    margin-top: 10em;
     color: white;
 }
 
@@ -82,4 +82,63 @@ body {
 /* Paragraph text style */
 .sub_paragraph {
     font-size: 18px;
+}
+
+/* hero slider timeline */
+.series__block {
+	position: relative;
+	overflow: hidden;
+}
+
+.hero_title {
+	margin: 0;
+}
+
+.hero_subtitle {
+	margin-top: 0.5rem;
+}
+
+.hero_timeline {
+	position: absolute;
+	left: 50%;
+	bottom: 1.75rem;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 0.75rem;
+}
+
+.hero_timeline_item {
+	position: relative;
+	width: 70px;
+	height: 6px;
+	padding: 0;
+	border: none;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.35);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.hero_timeline_item.is-active {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.hero_timeline_fill {
+	position: absolute;
+	inset: 0;
+	transform-origin: left center;
+	transform: scaleX(0);
+	background: #ffffff;
+}
+
+@media (max-width: 520px) {
+	.hero_timeline {
+		bottom: 1.25rem;
+		gap: 0.5rem;
+	}
+
+	.hero_timeline_item {
+		width: 48px;
+		height: 5px;
+	}
 }
