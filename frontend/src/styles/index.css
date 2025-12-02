@@ -142,3 +142,30 @@ body {
 		height: 5px;
 	}
 }
+
+/* —————— MOBILE HERO TEXT SCALING —————— */
+@media (max-width: 600px) {
+	.series__block_info h1 {
+		font-size: 32px;     /* вместо 50px */
+		margin-top: 2.5em;   /* вместо 4em */
+	}
+
+	.series__block_info p {
+		font-size: 18px;     /* вместо 30px */
+		margin-top: 5em;     /* вместо 10em */
+		width: 80vw;         /* чтобы влазило на экран */
+	}
+}
+
+@media (max-width: 400px) {
+	.series__block_info h1 {
+		font-size: 26px;
+		margin-top: 9em;
+	}
+
+	.series__block_info p {
+		font-size: 16px;
+		margin-top: 11em;
+		width: 85vw;
+	}
+}
