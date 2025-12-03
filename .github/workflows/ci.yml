@@ -28,7 +28,7 @@ jobs:
           set -euo pipefail
           test -f frontend/src/public/index.html
           rm -rf out
-          mkdir -p out/styles out/static
+          mkdir -p out/styles out/static out/app
           cp -r frontend/src/public/* out/
           cp -r frontend/src/styles/* out/styles/
           cp -r frontend/src/app/* out/app 
