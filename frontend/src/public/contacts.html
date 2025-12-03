@@ -124,7 +124,7 @@
     <!--------------------------------------------------------------------------------------------->
     <!--Form Begin-->
     <!--------------------------------------------------------------------------------------------->
-    <form id="form_overall_container_layout">
+    <form id="form_overall_container_layout" novalidate>
 
         <h2 id="form_header">Share Your Thoughts, Report Bugs, or Ask Questions</h2>
 
@@ -157,6 +157,19 @@
         <!--DROP DOWN BOX-->
         <div class="form_div_layout">
 
+            <label for=" user_contact_reason" class="form_text_style">Preferred contact method (required):</label>
+            <select id="user_contact_reason" name="user_contact_reason" class="form_input_style" required>
+                <option value="">Contact method</option>
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="None">None</option>
+            </select>
+
+        </div>
+
+        <!--DROP DOWN BOX-->
+        <div class="form_div_layout">
+
             <label for=" user_contact_reason" class="form_text_style">Reason for contacting us (required):</label>
             <select id="user_contact_reason" name="user_contact_reason" class="form_input_style" required>
                 <option value="">Reason to contact us</option>
@@ -170,9 +183,8 @@
 
         <!--ADDITIONAL NOTES/TEXT BOX AREA-->
         <div class="form_div_layout">
-
             <label for="text_box" class="form_text_style">Additional notes:</label>
-            <textarea id="text_box" name="text_box" class="form_input_style">
+            <textarea id="text_box" name="text_box" class="form_input_style" style='resize: none;'>
         </textarea>
 
         </div>
@@ -235,7 +247,7 @@
 	<!--------------------------------------------------------------------------------------------->
 	<!--Footer Ends-->
 	<!--------------------------------------------------------------------------------------------->
-
+    <script src="../app/form_validator.js"></script>
 </body>
 
 </html>

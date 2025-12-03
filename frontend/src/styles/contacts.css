@@ -134,3 +134,14 @@ li:before {
         width: 3vh;
     }
 }
+
+.form_error_message {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: #b00020; 
+}
+
+.form_input_error {
+    border: 2px solid #b00020;
+    outline: none;
+}
