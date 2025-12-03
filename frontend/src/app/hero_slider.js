@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let startTs = null
 
 	const setBackground = img =>
-		(root.style.backgroundImage = `linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), ${img}`)
+		(root.style.backgroundImage = `linear-gradient(rgba(0,0,0,.35), #538790), ${img}`)
 
 	const resetProgressBars = () => {
 		timelineItems.forEach(item => {
