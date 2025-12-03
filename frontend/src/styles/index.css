@@ -146,14 +146,14 @@ body {
 /* —————— MOBILE HERO TEXT SCALING —————— */
 @media (max-width: 600px) {
 	.series__block_info h1 {
-		font-size: 32px;     /* вместо 50px */
-		margin-top: 2.5em;   /* вместо 4em */
+		font-size: 32px;     
+		margin-top: 2.5em;   
 	}
 
 	.series__block_info p {
-		font-size: 18px;     /* вместо 30px */
-		margin-top: 5em;     /* вместо 10em */
-		width: 80vw;         /* чтобы влазило на экран */
+		font-size: 18px;     
+		margin-top: 8em;     
+		width: 80vw;         
 	}
 }
 
@@ -165,7 +165,7 @@ body {
 
 	.series__block_info p {
 		font-size: 16px;
-		margin-top: 11em;
+		margin-top: 5em;
 		width: 85vw;
 	}
 }
