@@ -33,12 +33,16 @@ jobs:
           cp -r frontend/src/styles/* out/styles/
           cp -r frontend/src/app/* out/app/
           cp -r frontend/static/* out/static/ 2>/dev/null || true
+
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./\.\./static/|static/|g'
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./static/|static/|g'
-          find out -type f -name "*.css" -print0 | xargs -0 sed -i 's|\.\./\.\./static/|\.\./static/|g'
+          find out -type f -name "*.css"  -print0 | xargs -0 sed -i 's|\.\./\.\./static/|\.\./static/|g'
+
+          find out -type f -name "*.js"   -print0 | xargs -0 sed -i 's|\.\./\.\./static/|\.\./static/|g'
+
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./styles/|styles/|g'
           find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./\.\./app/|app/|g'
-          find out -type f -name "*.html" -print0 | xargs -0 sed -i 's|\.\./app/|app/|g'
+          find out -type f -name "*.css"  -print0 | xargs -0 sed -i 's|\.\./\.\./app/|app/|g'
           find out -maxdepth 3 -type f | sed 's|^|  |'
 
       - name: Configure GitHub Pages
