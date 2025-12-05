@@ -119,7 +119,7 @@ p {
 	border-radius: 10px;
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-		url('../../static/general_ui_images/one_piece.png') center/cover no-repeat;
+		url('/public/images/general_ui/one_piece.png') center/cover no-repeat;
 }
 
 /* Favorite anime title overlay */
@@ -195,7 +195,7 @@ p {
 
 .favorite_animes .arrows_container .arrow_next,
 .favorite_animes .arrows_container .arrow_previous {
-	position: static;   
+	position: public;   
 	pointer-events: auto;
 	opacity: 0.9;
 }
@@ -275,7 +275,7 @@ p {
 
 	.favorite_animes .arrows_container .arrow_next,
 	.favorite_animes .arrows_container .arrow_previous {
-		position: static;
+		position: public;
 		transform: rotate(45deg);
 	}
 

@@ -12,19 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			title: 'One Piece',
 			description:
 				'"One Piece" has been my all-time favorite since I was a kid. It\'s not just about pirates and treasure — it\'s about freedom, friendship, and chasing your dreams no matter how far they are. Luffy\'s endless optimism and the Straw Hat crew\'s bond always remind me why I fell in love with anime in the first place. Every episode feels like an adventure, and the emotions hit just as strong even after hundreds of episodes.',
-			image: "url('../../static/general_ui_images/one_piece.png')",
+			image: "url('/public/images/general_ui/one_piece.png')",
 		},
 		{
 			title: 'Naruto',
 			description:
 				'"Naruto" is all about perseverance and believing in yourself even when no one else does. Watching Naruto grow from an outcast into a hero always motivates me to keep going, no matter how hard things get.',
-			image: "url('../../static/general_ui_images/naruto.png')",
+			image: "url('/public/images/general_ui/naruto.png')",
 		},
 		{
 			title: 'Attack on Titan',
 			description:
 				'"Attack on Titan" grabbed me with its intense story and complex characters. It\'s dark, emotional, and makes you think about freedom, sacrifice, and what it really means to fight for your future.',
-			image: "url('../../static/general_ui_images/aot.png')",
+			image: "url('/public/images/general_ui/aot.png')",
 		},
 	]
 

@@ -11,19 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			title: 'Attack on Titan',
 			subtitle:
 				'A dark and gripping tale of survival, sacrifice, and the cost of freedom. Humanity fights desperately against monstrous Titans as hidden truths reshape their entire world.',
-			image: "url('../../static/general_ui_images/aot.png')",
+			image: "url('/public/images/general_ui/aot.png')",
 		},
 		{
 			title: 'One Piece',
 			subtitle:
 				'An epic journey about freedom, adventure, and unbreakable friendship. Luffy and his crew sail across wild seas chasing their dreams, facing danger with optimism, laughter, and heart.',
-			image: "url('../../static/general_ui_images/one_piece.png')",
+			image: "url('/public/images/general_ui/one_piece.png')",
 		},
 		{
 			title: 'Naruto',
 			subtitle:
 				"A powerful story about overcoming loneliness, chasing your destiny, and never giving up. Naruto's path from an outcast to a true hero inspires with every step of his journey.",
-			image: "url('../../static/general_ui_images/naruto.png')",
+			image: "url('/public/images/general_ui/naruto.png')",
 		},
 	]
 
