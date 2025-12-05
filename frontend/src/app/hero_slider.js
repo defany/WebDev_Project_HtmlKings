@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL
+
 document.addEventListener('DOMContentLoaded', () => {
 	const root = document.getElementById('hero_slider')
 	if (!root) return
@@ -11,19 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			title: 'Attack on Titan',
 			subtitle:
 				'A dark and gripping tale of survival, sacrifice, and the cost of freedom. Humanity fights desperately against monstrous Titans as hidden truths reshape their entire world.',
-			image: "url('/public/images/general_ui/aot.png')",
+			image: `url(${BASE_URL}images/general_ui/aot.png)`,
 		},
 		{
 			title: 'One Piece',
 			subtitle:
 				'An epic journey about freedom, adventure, and unbreakable friendship. Luffy and his crew sail across wild seas chasing their dreams, facing danger with optimism, laughter, and heart.',
-			image: "url('/public/images/general_ui/one_piece.png')",
+			image: `url(${BASE_URL}images/general_ui/one_piece.png)`,
 		},
 		{
 			title: 'Naruto',
 			subtitle:
 				"A powerful story about overcoming loneliness, chasing your destiny, and never giving up. Naruto's path from an outcast to a true hero inspires with every step of his journey.",
-			image: "url('/public/images/general_ui/naruto.png')",
+			image: `url(${BASE_URL}images/general_ui/naruto.png)`,
 		},
 	]
 
@@ -33,8 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	let rafId = null
 	let startTs = null
 
-	const setBackground = img =>
-		(root.style.backgroundImage = `linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), ${img}`)
+	const setBackground = img => {
+		root.style.backgroundImage = `linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), ${img}`
+	}
 
 	const resetProgressBars = () => {
 		timelineItems.forEach(item => {
