@@ -13,6 +13,13 @@ h1 {
     text-decoration: underline;
 }
 
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 1.5em;
+    text-decoration: underline;
+}
+
 /* Shopping search bar container layout */
 #shop_container_layout {
     display: flex;
@@ -53,7 +60,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     text-align: center;
     gap: 1em;
     padding: 2em;
@@ -119,6 +126,89 @@ select {
     font-family: 'Nunito';
 }
 
+#special_offers_layout_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    height: 60vh;
+    border: solid black 2px;
+}
+
+#special_offers_layout_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40vw;
+    height: 60vh;
+}
+
+#special_offers_layout_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40vw;
+    height: 30vh;
+}
+
+#special_offer_text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#special_offer_image_1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/public/images/shop/special_offer_1.png') center/cover no-repeat;
+    width: 40vw;
+    height: 60vh;
+}
+
+#special_offer_image_2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/public/images/shop/special_offer_2.png') center/cover no-repeat;
+    width: 40vw;
+    height: 30vh;
+}
+
+#special_offer_image_3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/public/images/shop/special_offer_3.png') center/cover no-repeat;
+    width: 20vw;
+    height: 30vh;
+}
+
+#special_offer_image_4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/public/images/shop/special_offer_4.png') center/cover no-repeat;
+    width: 20vw;
+    height: 30vh;
+}
+
+#discount_text {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
 /* Mobile responsive styles for screens up to 768px */
 @media (max-width: 768px) {
     body {
@@ -129,7 +219,38 @@ select {
         font-size: 32px;
         margin-top: 1.5em;
     }
+
+    #discount_text {
+        font-size: 20px;
+    }
+}
+
+/* Small mobile responsive styles for screens up to 480px */
+@media (max-width: 480px) {
+    body {
+        margin-top: 20vh;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #discount_text {
+        font-size: 16px;
+    }
     
+    #shop_container_layout, 
+    .products_row_layout {
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+    
+    .product_image_size {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1320px) {
     #shop_container_layout {
         flex-direction: column;
         gap: 1.5em;
@@ -198,26 +319,5 @@ select {
 
     body {
         margin-top: 20vh;
-    }
-}
-
-/* Small mobile responsive styles for screens up to 480px */
-@media (max-width: 480px) {
-    body {
-        margin-top: 20vh;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-    
-    #shop_container_layout, 
-    .products_row_layout {
-        margin: 0.5em;
-        padding: 0.5em;
-    }
-    
-    .product_image_size {
-        max-width: 250px;
     }
 }
