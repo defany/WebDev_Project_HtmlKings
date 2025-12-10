@@ -313,7 +313,7 @@ p {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.favorite_animes .arrow_next,
 	.favorite_animes .arrow_previous {
 		transition: none !important;
