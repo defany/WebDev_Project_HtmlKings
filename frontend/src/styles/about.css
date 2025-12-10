@@ -312,3 +312,16 @@ p {
 		right: 18%;
 	}
 }
+
+@media (max-width: 768px) {
+	.favorite_animes .arrow_next,
+	.favorite_animes .arrow_previous {
+		transition: none !important;
+		transform: none !important;
+	}
+
+	.favorite_animes .arrow_next:hover,
+	.favorite_animes .arrow_previous:hover {
+		transform: none !important;
+	}
+}
