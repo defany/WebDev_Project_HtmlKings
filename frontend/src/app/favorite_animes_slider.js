@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{
 			title: 'One Piece',
 			description:
-				"\"One Piece\" has been my all-time favorite since I was a kid. It's not just about pirates and treasure — it's about freedom, friendship, and chasing your dreams no matter how far they are. Luffy's endless optimism and the Straw Hat crew's bond always remind me why I fell in love with anime in the first place. Every episode feels like an adventure, and the emotions hit just as strong even after hundreds of episodes.",
+				"\"One Piece\" has been my all-time favorite since I was a kid. It's not just about pirates and treasure — it's about freedom, friendship, and chasing your dreams no matter how far they are. Every episode feels like an adventure, and the emotions hit just as strong even after hundreds of episodes.",
 			image: `url(${BASE_URL}images/general_ui/one_piece.png)`,
 		},
 		{
