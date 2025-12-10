@@ -122,6 +122,11 @@ p {
 		url('/public/images/general_ui/one_piece.png') center/cover no-repeat;
 }
 
+/* Favorite anime section title */
+.favorite_animes_section__title {
+	text-align: center;
+}
+
 /* Favorite anime title overlay */
 .favorite_animes h3 {
 	position: absolute;
@@ -133,6 +138,7 @@ p {
 	font-size: clamp(1.8rem, 4vw, 3rem);
 	font-weight: 700;
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+	z-index: 2;
 }
 
 /* Favorite anime description overlay */
@@ -149,56 +155,82 @@ p {
 	background: rgba(0, 0, 0, 0.45);
 	border-radius: 10px;
 	backdrop-filter: blur(2px);
+	z-index: 2;
 }
 
-/* Favorite anime section title */
-.favorite_animes_section__title {
-	text-align: center;
-}
-
-/* ===== Arrows for the slider ===== */
-.arrow_next,
-.arrow_previous {
-	position: absolute;
-	top: 45%;
-	width: 0;
-	height: 0;
-	border: solid black;
-	cursor: pointer;
-	transition: transform 0.2s ease, opacity 0.2s ease;
-	opacity: 0.8;
-}
-
-/* Right arrow */
-.arrow_next {
-	right: 2%;
-	border-width: 0 5px 5px 0;
-}
-
-/* Left arrow */
-.arrow_previous {
-	left: 2%;
-	border-width: 5px 0 0 5px;
-}
+/* ===== Arrows for the slider (override arrows.css) ===== */
 
 .favorite_animes .arrows_container {
 	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
+	inset: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	transform: translateY(-50%);
 	pointer-events: none;
+	z-index: 3;
 }
 
-.favorite_animes .arrows_container .arrow_next,
-.favorite_animes .arrows_container .arrow_previous {
-	position: public;   
+.favorite_animes .arrow_next,
+.favorite_animes .arrow_previous {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	border-radius: 999px;
+	border: none;
+	background: rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 	pointer-events: auto;
-	opacity: 0.9;
+	transition: background 0.15s ease, transform 0.15s ease;
+	opacity: 0.95;
 }
+
+/* chevron */
+.favorite_animes .arrow_next::before,
+.favorite_animes .arrow_previous::before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+}
+
+.favorite_animes .arrow_next {
+	right: 5px;
+}
+
+.favorite_animes .arrow_next::before {
+	transform: rotate(45deg);
+}
+
+.favorite_animes .arrow_previous {
+	left: 5px;
+}
+
+.favorite_animes .arrow_previous::before {
+	transform: rotate(-135deg);
+}
+
+/* hover на десктопе */
+@media (hover: hover) {
+	.favorite_animes .arrow_next:hover,
+	.favorite_animes .arrow_previous:hover {
+		background: rgba(0, 0, 0, 0.65);
+		transform: translateY(-50%) scale(1.05);
+	}
+}
+
+.arrow_next,
+.arrow_previous {
+	border: none;
+}
+
+/* ======= MEDIA QUERIES ======= */
 
 @media (max-width: 992px) {
 	.greeting__block {
@@ -241,7 +273,6 @@ p {
 	.favorite_animes {
 		width: 92vw;
 		height: 56vh;
-		overflow: visible;
 	}
 
 	.favorite_animes h3 {
@@ -253,8 +284,9 @@ p {
 	.favorite_animes p {
 		left: 5%;
 		right: 5%;
-		bottom: 5%;
+		bottom: 18%;
 		padding: 0.75rem 1rem;
+		font-size: 0.95rem;
 	}
 
 	.about_photo img {
@@ -262,26 +294,21 @@ p {
 		height: 44vh;
 	}
 
-	.favorite_animes .arrows_container {
-		position: absolute;
-		top: 100%;             
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: auto;
-		margin-top: 1.75rem;
-		justify-content: center;
-		gap: 2rem;
+	.favorite_animes .arrow_next,
+	.favorite_animes .arrow_previous {
+		width: 32px;
+		height: 32px;
+		/* top: auto; */
+		margin-top: 11.15em;
+		bottom: 6%;
+		transform: translateY(0);
 	}
 
-	.favorite_animes .arrows_container .arrow_next,
-	.favorite_animes .arrows_container .arrow_previous {
-		position: public;
-		transform: rotate(45deg);
+	.favorite_animes .arrow_previous {
+		left: 18%;
 	}
 
-	.arrow_next,
-	.arrow_previous {
-		right: auto;
-		left: auto;
+	.favorite_animes .arrow_next {
+		right: 18%;
 	}
 }

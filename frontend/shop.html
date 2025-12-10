@@ -8,32 +8,27 @@
 	<link rel="stylesheet" type="text/css" href="/src/styles/nav_bar.css" />
 	<link rel="stylesheet" type="text/css" href="/src/styles/footer.css" />
 
-	<!--Including google font sheet for Nunito-->
 	<link
 		href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
 		rel="stylesheet"
 	/>
 
-	<title>Anime Haven/Shop</title>
+	<title>Anime Haven / Shop</title>
 </head>
 
 <body>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Navigation Bar Begin-->
-	<!--------------------------------------------------------------------------------------------->
+	<!-- nav bar -->
 	<nav class="nav_bar_layout">
-		<!--Homepage Button-->
 		<div id="homepage_button">
 			<a href="index.html" aria-label="Go to Home page">
 				<img
 					src="/public/images/general_ui/homepage_image.png"
-					alt="Image of our homepage navigation bar button"
+					alt="Homepage navigation button"
 					id="homepage_button_img"
 				/>
 			</a>
 		</div>
 
-		<!--Other Buttons-->
 		<div>
 			<span class="navbar_other_buttons">
 				<a href="about.html" aria-label="Go to About Author page">About Author</a>
@@ -52,18 +47,42 @@
 			<span class="navbar_other_buttons">FAQ</span>
 		</div>
 
-		<!--Profile Button-->
 		<div id="profile_button">Profile</div>
 	</nav>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Navigation Bar End-->
-	<!--------------------------------------------------------------------------------------------->
 
 	<h1>Welcome to our Shop!</h1>
 
-	<!--------------------------------------------------------------------------------------------->
-	<!--Shop Search and Filter Bar Starts-->
-	<!--------------------------------------------------------------------------------------------->
+	<!-- special offers -->
+	<section id="special_offers">
+		<h2>Special Offers!</h2>
+
+		<div id="special_offers_layout_1">
+			<!-- left big offer -->
+			<div id="special_offer_image_1" class="special_offer_card">
+				<p class="discount_text">-90%</p>
+			</div>
+
+			<!-- right column -->
+			<div id="special_offers_layout_2">
+				<!-- top right -->
+				<div id="special_offer_image_2" class="special_offer_card">
+					<p class="discount_text">-80%</p>
+				</div>
+
+				<!-- bottom row -->
+				<div id="special_offers_layout_3">
+					<div id="special_offer_image_3" class="special_offer_card">
+						<p class="discount_text">-70%</p>
+					</div>
+					<div id="special_offer_image_4" class="special_offer_card">
+						<p class="discount_text">-60%</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- search + filters -->
 	<section id="shop_container_layout">
 		<div id="search_box">
 			<label for="search_field">Search for a product:</label>
@@ -81,7 +100,6 @@
 
 			<div>
 				<label for="filters">Choose a filter:</label>
-
 				<select name="filters" id="filters">
 					<option value="price">Price</option>
 					<option value="type">Product Type</option>
@@ -91,195 +109,259 @@
 			</div>
 		</div>
 	</section>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Shop Search and Filter Bar Ends-->
-	<!--------------------------------------------------------------------------------------------->
 
-	<!--------------------------------------------------------------------------------------------->
-	<!--Products for sale Starts-->
-	<!--------------------------------------------------------------------------------------------->
-	<!--Mangas for sale-->
+	<!-- products: manga -->
 	<section class="products_row_layout">
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/jjk_product.png"
-				alt="Image of JJK Manga volume 2."
+				alt="JJK Manga volume 2."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 13€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 13€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />JJK Manga volume 2.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />JJK Manga volume 2.
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/naruto_product.png"
-				alt="Image of Naruto Manga 3 in 1 edition. (Volumes 1 to 3)."
+				alt="Naruto Manga 3 in 1 edition (Volumes 1 to 3)."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 12.79€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 12.79€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Naruto Manga 3 in 1 edition. (Volumes 1 to
-					3).
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Naruto Manga 3 in 1 edition. (Volumes 1 to 3).
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/one_piece_product.png"
-				alt="One Piece Manga (Omnibus Edition), Vol. 1: Includes vols. 1, 2 & 3"
+				alt="One Piece Manga (Omnibus Edition), Vol. 1: Includes vols. 1, 2 &amp; 3."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 13.07€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 13.07€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />One Piece Manga (Omnibus Edition), Vol. 1:
-					Includes vols. 1, 2 &amp; 3.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />One Piece Manga (Omnibus Edition), Vol. 1:
+				Includes vols. 1, 2 &amp; 3.
+			</p>
 		</div>
 	</section>
 
-	<!--Figurines for sale-->
+	<!-- products: figurines -->
 	<section class="products_row_layout">
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/frieren_fig.png"
-				alt="Image of Frieren figurine."
+				alt="Frieren figurine."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 10.99€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 10.99€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Frieren stuck in chest action figurine.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Frieren stuck in chest action figurine.
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/my_dress_up_darling_fig.png"
-				alt="Image of Dress Up Darling figurine."
+				alt="Dress Up Darling figurine."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 26.99€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 26.99€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Figurine of Marin from My Dress-Up
-					Darling.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Figurine of Marin from My Dress-Up Darling.
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/gojo_fig.png"
-				alt="Image of Gojo from JJK."
+				alt="Gojo figurine from JJK."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 16.03€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 16.03€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Chibi figurine of Gojo sitting and
-					smiling.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Chibi figurine of Gojo sitting and smiling.
+			</p>
 		</div>
 	</section>
 
-	<!--Clothing for sale-->
+	<!-- products: clothing -->
 	<section class="products_row_layout">
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/bleach_shirt.png"
-				alt="Image of Bleach anime style shirt."
+				alt="Bleach Thousand-Year Blood War anime shirt."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 59.61€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 59.61€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Bleach Thousand-Year Blood War anime
-					shirt.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Bleach Thousand-Year Blood War anime shirt.
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/one_piece_hat.png"
-				alt="Image of One Piece hat"
+				alt="One Piece hat."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 12.96€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 12.96€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />One Piece hat. The One Piece is the style
-					we found along the way.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />One Piece hat. The One Piece is the style we
+				found along the way.
+			</p>
 		</div>
 
-		<div class="max_size">
+		<div class="product_card">
 			<img
 				src="/public/images/shop/demon_hunter_shirt.png"
-				alt="Image of Demon Slayer anime style jacket."
+				alt="Demon Slayer anime jacket."
 				class="product_image_size"
 			/>
 			<div class="products_details_layout">
-				<div>Price: 129.60€</div>
-				<button type="button">Add to cart</button>
+				<div class="product_price">Price: 129.60€</div>
+				<div class="product_qty">
+					<button type="button" class="qty_btn qty_btn--minus" aria-label="Decrease quantity">-</button>
+					<input
+						type="number"
+						class="qty_input"
+						min="1"
+						value="1"
+						inputmode="numeric"
+					/>
+					<button type="button" class="qty_btn qty_btn--plus" aria-label="Increase quantity">+</button>
+				</div>
+				<button type="button" class="add_to_cart_btn">Add to cart</button>
 			</div>
-			<div>
-				<p class="product_description">
-					<b><u>Product:</u></b><br />Demon Slayer: Kimetsu no Yaiba x Team
-					Liquid - Tanjiro Varsity Jacket.
-				</p>
-			</div>
+			<p class="product_description">
+				<b><u>Product:</u></b><br />Demon Slayer: Kimetsu no Yaiba x Team Liquid –
+				Tanjiro Varsity Jacket.
+			</p>
 		</div>
 	</section>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Products for sale Ends-->
-	<!--------------------------------------------------------------------------------------------->
 
-	<!--------------------------------------------------------------------------------------------->
-	<!--Footer starts-->
-	<!--------------------------------------------------------------------------------------------->
+	<!-- footer -->
 	<footer class="footer">
 		<br /><br />
 		<hr />
 
-		<!--Main footer text section with copyright and legal links-->
 		<div class="footer_main_text_container">
-			<!--Last updated date display-->
 			<div class="footer_date_text">Last Updated: 26/11/2025</div>
 			<div>
 				<div class="footer_main_text">
@@ -291,7 +373,7 @@
 					respective owners.
 				</div>
 			</div>
-			<!--Social media icons container-->
+
 			<div class="footer_logos_container">
 				<a href="https://discord.com/" title="Go to Discord" target="_blank">
 					<img
@@ -332,9 +414,37 @@
 		</div>
 		<br />
 	</footer>
-	<!--------------------------------------------------------------------------------------------->
-	<!--Footer Ends-->
-	<!--------------------------------------------------------------------------------------------->
-</body>
 
+	<!-- qty buttons logic -->
+	<script>
+		// qty +/- handlers
+		document.querySelectorAll('.product_card').forEach(card => {
+			const input = card.querySelector('.qty_input');
+			const minus = card.querySelector('.qty_btn--minus');
+			const plus = card.querySelector('.qty_btn--plus');
+
+			if (!input || !minus || !plus) return;
+
+			const clamp = () => {
+				const min = Number(input.min) || 1;
+				if (!input.value || Number(input.value) < min) input.value = min;
+			};
+
+			minus.addEventListener('click', () => {
+				const min = Number(input.min) || 1;
+				const current = Number(input.value) || min;
+				const next = Math.max(min, current - 1);
+				input.value = next;
+			});
+
+			plus.addEventListener('click', () => {
+				const min = Number(input.min) || 1;
+				const current = Number(input.value) || min;
+				input.value = current + 1;
+			});
+
+			input.addEventListener('blur', clamp);
+		});
+	</script>
+</body>
 </html>
